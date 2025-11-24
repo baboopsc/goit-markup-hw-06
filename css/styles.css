@@ -778,3 +778,242 @@ footer p {
 .form-submit-btn:hover {
   background-color: #404BBF;
 }
+
+/* ==================== MOBILE STYLES (320px - 767px) ==================== */
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  /* Header - Mobile */
+  header .container {
+    padding: 16px 0;
+  }
+
+  .nav-list,
+  .contact-info {
+    display: none;
+  }
+
+  /* Hero - Mobile */
+  .hero {
+    padding: 72px 0;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    line-height: 1.11;
+    margin-bottom: 72px;
+  }
+
+  /* Features - Mobile */
+  .features {
+    padding: 96px 0;
+  }
+
+  .features .container {
+    grid-template-columns: 1fr;
+    gap: 72px;
+  }
+
+  .feature-icon {
+    display: none;
+  }
+
+  .feature-card h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .feature-card p {
+    font-weight: 500;
+  }
+
+  /* Team - Mobile */
+  .our-team {
+    padding: 96px 0;
+  }
+
+  .team-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+  }
+
+  .team-card {
+    width: 100%;
+    max-width: 264px;
+  }
+
+  /* Portfolio - Mobile */
+  .portfolio-section {
+    padding: 96px 0;
+  }
+
+  .portfolio-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .portfolio-card {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  /* Footer - Mobile */
+  footer {
+    padding: 96px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+    text-align: center;
+  }
+
+  .footer-info,
+  .footer-social,
+  .footer-subscribe {
+    width: 100%;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .subscribe-input {
+    width: 100%;
+    max-width: 398px;
+  }
+
+  /* Modal - Mobile */
+  .modal {
+    width: calc(100% - 32px);
+    max-width: 392px;
+    padding: 72px 16px 24px;
+  }
+}
+
+/* ==================== TABLET STYLES (768px - 1157px) ==================== */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    width: 768px;
+    padding: 0 16px;
+  }
+
+  /* Features - Tablet */
+  .features .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 72px 24px;
+  }
+
+  .feature-icon {
+    display: flex;
+  }
+
+  .feature-card h2 {
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  /* Team - Tablet */
+  .team-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
+  }
+
+  .team-card {
+    width: calc(50% - 12px);
+  }
+
+  /* Portfolio - Tablet */
+  .portfolio-list {
+    gap: 72px 24px;
+  }
+
+  .portfolio-card {
+    width: calc(50% - 12px);
+  }
+
+  /* Footer - Tablet */
+  .footer-content {
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    align-items: flex-start;
+  }
+
+  .footer-info {
+    width: 264px;
+  }
+
+  .footer-social {
+    width: 208px;
+  }
+
+  .footer-subscribe {
+    width: 100%;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .subscribe-input {
+    width: 264px;
+  }
+
+  /* Modal - Tablet */
+  .modal {
+    width: 408px;
+  }
+}
+
+/* ==================== DESKTOP STYLES (1158px+) ==================== */
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+
+  /* Features - Desktop */
+  .feature-card h2 {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .feature-card p {
+    font-weight: 400;
+  }
+
+  /* Team - Desktop */
+  .team-list {
+    flex-wrap: nowrap;
+  }
+
+  .team-card {
+    width: calc(25% - 18px);
+  }
+
+  /* Portfolio - Desktop */
+  .portfolio-card {
+    width: calc(33.333% - 16px);
+  }
+
+  /* Footer - Desktop */
+  .footer-content {
+    flex-wrap: nowrap;
+    gap: 120px;
+  }
+
+  .footer-subscribe {
+    width: 453px;
+  }
+}
